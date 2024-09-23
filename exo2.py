@@ -2,12 +2,12 @@
 #partie 1
 message = "esmhQVGXIPE"
 cle = "cle"
-
+#bonjour conasse 
 def generer_cle(message,cle):
     cle_rep = cle*(len(message)//len(cle))+cle[:len(message)%len(cle)]
     return cle_rep
 
-def chiff_vig(message,cle):
+def chiff_vig(messagek,cle):
     res = ""
     cle = generer_cle(message,cle)
     for i in range(len(message)):
