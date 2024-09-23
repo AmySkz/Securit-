@@ -3,6 +3,7 @@
 message = "esmhQVGXIPE"
 cle = "cle"
 #bonjour conasse 
+#bonjour madame
 def generer_cle(message,cle):
     cle_rep = cle*(len(message)//len(cle))+cle[:len(message)%len(cle)]
     return cle_rep
