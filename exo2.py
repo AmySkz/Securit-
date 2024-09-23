@@ -7,7 +7,7 @@ cle = "cle"
 def generer_cle(message,cle):
     cle_rep = cle*(len(message)//len(cle))+cle[:len(message)%len(cle)]
     return cle_rep
-
+#le chiffrement de Vigenere : 
 def chiff_vig(messagek,cle):
     res = ""
     cle = generer_cle(message,cle)
@@ -24,7 +24,7 @@ def chiff_vig(messagek,cle):
         else:
             res += message[i]
     return res
-
+# dechiffrement : 
 def dechiff_vig(message,cle):
     res = ""
     cle = generer_cle(message,cle)
